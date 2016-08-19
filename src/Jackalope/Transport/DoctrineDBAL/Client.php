@@ -522,7 +522,7 @@ class Client extends BaseTransport implements QueryTransport, WritingInterface, 
      */
     private function getNamespacePrefixes()
     {
-        return array_keys($this->getNamespaces());
+        return array_keys((array) $this->getNamespaces());
     }
 
     /**
